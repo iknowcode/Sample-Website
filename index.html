@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SampleHimalayas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+            <!-- Navigation bar-->
+            <div class="nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a> 
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+
+                </div>
+
+                <div class="center">
+                    Living it up in the himalayas...
+                </div>
+
+                <div class="right-side">
+                    <div> MAJESTIC MACLOEDGANJ </div>
+                </div>
+
+            </div>
+            <!--Contents-->
+            <div class="content-wrapper">
+
+                <div class="portfolio-items-wrapper">
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img1.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo1.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img2.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo2.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img3.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo3.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img4.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo4.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img5.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo5.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img6.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo6.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img7.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo7.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img8.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo8.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-bg" style="background-image:url(images/img9.jpg)">
+                        </div>
+                        <div class="img-text-wrapper"> <!--This will be the text inside Images with the logo-->
+                            <div class="logo-wrapper">
+                                <img src = "images/logos/logo9.png">
+                            </div>
+                            <div class="subtitle">
+                                Sample subtitle ...
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                
+
+            </div>
+
+
+    </div>
+</body>
+
+<script>
+    const list = document.querySelectorAll('.portfolio-item-wrapper');
+    list.forEach( element=> {
+        element.addEventListener('mouseover',()=>{
+            element.childNodes[1].classList.add('img-darken');
+        })
+
+        element.addEventListener('mouseout',()=>{
+            element.childNodes[1].classList.remove('img-darken');
+        })
+
+    } )
+</script>
+
+</html>
